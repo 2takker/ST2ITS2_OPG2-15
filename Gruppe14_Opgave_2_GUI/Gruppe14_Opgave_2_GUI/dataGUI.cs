@@ -20,8 +20,7 @@ namespace Gruppe14_Opgave_2_GUI
         {
             InitializeComponent();
             
-            BTform1 = new formBT();
-            BMIform1 = new formBMI();
+            BTform1 = new formBT();            
         }
 
         private void btnBS_Click(object sender, EventArgs e)
@@ -37,6 +36,7 @@ namespace Gruppe14_Opgave_2_GUI
 
         private void btnBMI_Click(object sender, EventArgs e)
         {
+            BMIform1 = new formBMI(txtBoxCPR.Text);
             BMIform1.ShowDialog();
         }
     }

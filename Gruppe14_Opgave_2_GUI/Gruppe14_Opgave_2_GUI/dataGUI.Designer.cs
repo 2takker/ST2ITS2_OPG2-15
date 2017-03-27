@@ -40,6 +40,8 @@
             this.dtpStart = new System.Windows.Forms.DateTimePicker();
             this.dtpSlut = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtBoxCPR = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBS
@@ -130,7 +132,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 54);
+            this.label2.Location = new System.Drawing.Point(44, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 25);
             this.label2.TabIndex = 8;
@@ -138,7 +140,7 @@
             // 
             // dtpStart
             // 
-            this.dtpStart.Location = new System.Drawing.Point(49, 92);
+            this.dtpStart.Location = new System.Drawing.Point(49, 181);
             this.dtpStart.Name = "dtpStart";
             this.dtpStart.Size = new System.Drawing.Size(200, 31);
             this.dtpStart.TabIndex = 9;
@@ -146,7 +148,7 @@
             // 
             // dtpSlut
             // 
-            this.dtpSlut.Location = new System.Drawing.Point(49, 195);
+            this.dtpSlut.Location = new System.Drawing.Point(49, 284);
             this.dtpSlut.Name = "dtpSlut";
             this.dtpSlut.Size = new System.Drawing.Size(200, 31);
             this.dtpSlut.TabIndex = 10;
@@ -155,17 +157,35 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 143);
+            this.label4.Location = new System.Drawing.Point(44, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "til";
+            // 
+            // txtBoxCPR
+            // 
+            this.txtBoxCPR.Location = new System.Drawing.Point(49, 91);
+            this.txtBoxCPR.Name = "txtBoxCPR";
+            this.txtBoxCPR.Size = new System.Drawing.Size(200, 31);
+            this.txtBoxCPR.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(49, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "CPR";
             // 
             // dataGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 826);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtBoxCPR);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpSlut);
             this.Controls.Add(this.dtpStart);
@@ -199,6 +219,8 @@
         private System.Windows.Forms.DateTimePicker dtpStart;
         private System.Windows.Forms.DateTimePicker dtpSlut;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBoxCPR;
+        private System.Windows.Forms.Label label3;
     }
 }
 
