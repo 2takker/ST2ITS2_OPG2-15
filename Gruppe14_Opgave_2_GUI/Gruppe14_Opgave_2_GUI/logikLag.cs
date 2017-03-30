@@ -49,5 +49,27 @@ namespace Logik
             return logikPatientBT;
         }
 
+
+        public bool cprOK(String nr)
+        {
+            int[] weight = { 4, 3, 2, 7, 6, 5, 4, 3, 2, 1 };
+            int sum = 0;
+
+            if (nr == "1234567890") //Dette er vores test-CPR, som er knyttet til alt testdata på SQL-serveren.
+                return true;
+
+            if (nr.Length == 10 )
+            {
+                for (int i = 0; i < nr.Length; i++)
+                {
+                    char[] chars = nr.ToCharArray();
+                    sum += (chars[i] - 0x30) * weight[i];
+                }
+                int res = sum % 11;
+                if (res == 0)
+                    return true;
+            }
+            return false;
+        }
     }
 }
