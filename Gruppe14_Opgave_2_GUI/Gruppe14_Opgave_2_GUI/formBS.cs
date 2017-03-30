@@ -7,22 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using logik;
 using DTO;
+using Logik;
 
 namespace Gruppe14_Opgave_2_GUI
 {
     public partial class formBS : Form
     {
-        LogikStub ls1;
-        List<BS_DTO> BSliste;
+        logikLag lk;
+        List<BS_DTO> BSliste = new List<BS_DTO>();
 
 
-        public formBS(DateTime startDato, DateTime slutDato)
+
+        public formBS(DateTime startDato, DateTime slutDato, string cpr)
         {
             InitializeComponent();
-            ls1 = new LogikStub();
-            BSliste = ls1.getBS("Ligegyldig string...");
+            lk = new logikLag();
+            BSliste = lk.getPatientBS(cpr);
 
             foreach (var ele in BSliste)
             {

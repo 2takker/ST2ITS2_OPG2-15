@@ -75,10 +75,9 @@
       <DependentUpon>formBT.cs</DependentUpon>
     </Compile>
     <Compile Include="logikLag.cs" />
-    <Compile Include="LogikStub.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vægt_DTO.cs" />
+    <Compile Include="Vaegt_DTO.cs" />
     <EmbeddedResource Include="dataGUI.resx">
       <DependentUpon>dataGUI.cs</DependentUpon>
     </EmbeddedResource>

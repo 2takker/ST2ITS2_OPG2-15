@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logik;
+using DTO;
 
 namespace Gruppe14_Opgave_2_GUI
 {
@@ -15,14 +16,25 @@ namespace Gruppe14_Opgave_2_GUI
     {
         string cpr_;
         logikLag lk = new logikLag();
+        private List<Vaegt_DTO> guiPatientVaegt = new List<Vaegt_DTO>();
 
-        public formBMI(string cpr)
+        public formBMI(DateTime startDato, DateTime slutDato, string cpr)
         {
             InitializeComponent();
-
             cpr_ = cpr;
 
-            txtBoxBMI.Text = Convert.ToString(Math.Round(lk.udregnBMI(cpr),1));
+            guiPatientVaegt = lk.udregnBMI(cpr_);
+
+            
+            foreach (var ele in guiPatientVaegt)
+            {
+                if (ele.getDate() >= startDato && ele.getDate() <= slutDato)
+                {
+                    chartBMI.Series["Vaegt"].Points.AddXY(ele.getDate(), ele.getVaegt());
+                    chartBMI.Series["BMI"].Points.AddXY(ele.getDate(), ele.getBMI());
+                }
+            }
+
         }
     }
 }

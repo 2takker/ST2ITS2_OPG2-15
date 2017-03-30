@@ -28,44 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxBMI = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.chartBMI = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBMI)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtBoxBMI
+            // chartBMI
             // 
-            this.txtBoxBMI.Enabled = false;
-            this.txtBoxBMI.Location = new System.Drawing.Point(96, 143);
-            this.txtBoxBMI.Name = "txtBoxBMI";
-            this.txtBoxBMI.Size = new System.Drawing.Size(180, 31);
-            this.txtBoxBMI.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 112);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BMI";
+            chartArea1.Name = "ChartArea1";
+            this.chartBMI.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartBMI.Legends.Add(legend1);
+            this.chartBMI.Location = new System.Drawing.Point(40, 44);
+            this.chartBMI.Name = "chartBMI";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Vaegt";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "BMI";
+            this.chartBMI.Series.Add(series1);
+            this.chartBMI.Series.Add(series2);
+            this.chartBMI.Size = new System.Drawing.Size(1091, 847);
+            this.chartBMI.TabIndex = 0;
             // 
             // formBMI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 585);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtBoxBMI);
+            this.ClientSize = new System.Drawing.Size(1177, 948);
+            this.Controls.Add(this.chartBMI);
             this.Name = "formBMI";
             this.Text = "Vægt og BMI";
+            ((System.ComponentModel.ISupportInitialize)(this.chartBMI)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxBMI;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBMI;
     }
 }
