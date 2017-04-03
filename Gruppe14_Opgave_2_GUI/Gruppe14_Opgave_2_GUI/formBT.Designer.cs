@@ -38,16 +38,21 @@
             // 
             // chartBT
             // 
+            chartArea1.AxisX.Title = "Dato";
+            chartArea1.AxisY.Title = "mmHg";
             chartArea1.Name = "ChartArea1";
             this.chartBT.ChartAreas.Add(chartArea1);
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
             legend1.Name = "Legend1";
             this.chartBT.Legends.Add(legend1);
             this.chartBT.Location = new System.Drawing.Point(59, 88);
             this.chartBT.Name = "chartBT";
+            series1.BorderWidth = 2;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Systole";
+            series2.BorderWidth = 2;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.Color = System.Drawing.Color.Red;

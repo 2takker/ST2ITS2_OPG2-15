@@ -38,18 +38,24 @@
             // 
             // chartBMI
             // 
+            chartArea1.AxisX.Title = "Dato";
+            chartArea1.AxisY.Title = "kg";
             chartArea1.Name = "ChartArea1";
             this.chartBMI.ChartAreas.Add(chartArea1);
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
             legend1.Name = "Legend1";
             this.chartBMI.Legends.Add(legend1);
             this.chartBMI.Location = new System.Drawing.Point(40, 44);
             this.chartBMI.Name = "chartBMI";
+            series1.BorderWidth = 2;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Vaegt";
+            series2.BorderWidth = 2;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Color = System.Drawing.Color.MediumSeaGreen;
             series2.Legend = "Legend1";
             series2.Name = "BMI";
             this.chartBMI.Series.Add(series1);
