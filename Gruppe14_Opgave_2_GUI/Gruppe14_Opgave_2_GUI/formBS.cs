@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DTO;
 using Logik;
 
-namespace Gruppe14_Opgave_2_GUI
+namespace Gruppe15_Opgave_2_GUI
 {
     public partial class formBS : Form
     {

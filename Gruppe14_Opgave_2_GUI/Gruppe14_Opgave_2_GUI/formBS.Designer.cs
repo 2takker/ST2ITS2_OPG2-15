@@ -1,4 +1,4 @@
-﻿namespace Gruppe14_Opgave_2_GUI
+﻿namespace Gruppe15_Opgave_2_GUI
 {
     partial class formBS
     {

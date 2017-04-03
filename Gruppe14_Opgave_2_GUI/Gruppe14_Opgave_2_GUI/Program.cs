@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gruppe14_Opgave_2_GUI
+namespace Gruppe15_Opgave_2_GUI
 {
     static class Program
     {
@@ -16,9 +16,7 @@ namespace Gruppe14_Opgave_2_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dataGUI());
-
-            
+            Application.Run(new dataGUI());            
         }
 
         

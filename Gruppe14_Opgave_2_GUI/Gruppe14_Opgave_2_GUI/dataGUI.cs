@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logik;
 
-namespace Gruppe14_Opgave_2_GUI
+namespace Gruppe15_Opgave_2_GUI
 {
     public partial class dataGUI : Form
     {

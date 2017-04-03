@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Logik;
 using DTO;
 
-namespace Gruppe14_Opgave_2_GUI
+namespace Gruppe15_Opgave_2_GUI
 {
     public partial class formBMI : Form
     {
