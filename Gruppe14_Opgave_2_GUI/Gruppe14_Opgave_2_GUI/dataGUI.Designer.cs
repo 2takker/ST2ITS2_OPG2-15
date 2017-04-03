@@ -40,10 +40,14 @@
             this.dtpStart = new System.Windows.Forms.DateTimePicker();
             this.dtpSlut = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtBoxCPR = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnReadCPR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBS
             // 
+            this.btnBS.Enabled = false;
             this.btnBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBS.Location = new System.Drawing.Point(320, 54);
             this.btnBS.Name = "btnBS";
@@ -55,6 +59,7 @@
             // 
             // btnBT
             // 
+            this.btnBT.Enabled = false;
             this.btnBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBT.Location = new System.Drawing.Point(320, 286);
             this.btnBT.Name = "btnBT";
@@ -66,6 +71,7 @@
             // 
             // btnBMI
             // 
+            this.btnBMI.Enabled = false;
             this.btnBMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBMI.Location = new System.Drawing.Point(320, 518);
             this.btnBMI.Name = "btnBMI";
@@ -77,6 +83,7 @@
             // 
             // btnDoctor
             // 
+            this.btnDoctor.Enabled = false;
             this.btnDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoctor.Location = new System.Drawing.Point(816, 286);
             this.btnDoctor.Name = "btnDoctor";
@@ -130,7 +137,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 54);
+            this.label2.Location = new System.Drawing.Point(44, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 25);
             this.label2.TabIndex = 8;
@@ -138,7 +145,7 @@
             // 
             // dtpStart
             // 
-            this.dtpStart.Location = new System.Drawing.Point(49, 92);
+            this.dtpStart.Location = new System.Drawing.Point(49, 259);
             this.dtpStart.Name = "dtpStart";
             this.dtpStart.Size = new System.Drawing.Size(200, 31);
             this.dtpStart.TabIndex = 9;
@@ -146,7 +153,7 @@
             // 
             // dtpSlut
             // 
-            this.dtpSlut.Location = new System.Drawing.Point(49, 195);
+            this.dtpSlut.Location = new System.Drawing.Point(49, 362);
             this.dtpSlut.Name = "dtpSlut";
             this.dtpSlut.Size = new System.Drawing.Size(200, 31);
             this.dtpSlut.TabIndex = 10;
@@ -155,17 +162,46 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 143);
+            this.label4.Location = new System.Drawing.Point(44, 310);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "til";
+            // 
+            // txtBoxCPR
+            // 
+            this.txtBoxCPR.Location = new System.Drawing.Point(49, 91);
+            this.txtBoxCPR.Name = "txtBoxCPR";
+            this.txtBoxCPR.Size = new System.Drawing.Size(200, 31);
+            this.txtBoxCPR.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(49, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "CPR";
+            // 
+            // btnReadCPR
+            // 
+            this.btnReadCPR.Location = new System.Drawing.Point(49, 129);
+            this.btnReadCPR.Name = "btnReadCPR";
+            this.btnReadCPR.Size = new System.Drawing.Size(200, 39);
+            this.btnReadCPR.TabIndex = 15;
+            this.btnReadCPR.Text = "Indlæs CPR";
+            this.btnReadCPR.UseVisualStyleBackColor = true;
+            this.btnReadCPR.Click += new System.EventHandler(this.btnReadCPR_Click);
             // 
             // dataGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 826);
+            this.Controls.Add(this.btnReadCPR);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtBoxCPR);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpSlut);
             this.Controls.Add(this.dtpStart);
@@ -199,6 +235,9 @@
         private System.Windows.Forms.DateTimePicker dtpStart;
         private System.Windows.Forms.DateTimePicker dtpSlut;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBoxCPR;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnReadCPR;
     }
 }
 

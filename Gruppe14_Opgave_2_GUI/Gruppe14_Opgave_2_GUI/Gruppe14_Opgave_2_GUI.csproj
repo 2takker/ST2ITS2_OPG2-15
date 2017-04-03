@@ -55,6 +55,7 @@
     <Compile Include="dataGUI.Designer.cs">
       <DependentUpon>dataGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataLag.cs" />
     <Compile Include="formBMI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,10 +74,10 @@
     <Compile Include="formBT.Designer.cs">
       <DependentUpon>formBT.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogikStub.cs" />
+    <Compile Include="logikLag.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vægt_DTO.cs" />
+    <Compile Include="Vaegt_DTO.cs" />
     <EmbeddedResource Include="dataGUI.resx">
       <DependentUpon>dataGUI.cs</DependentUpon>
     </EmbeddedResource>

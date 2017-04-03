@@ -17,6 +17,10 @@ namespace Gruppe14_Opgave_2_GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new dataGUI());
+
+            
         }
+
+        
     }
 }

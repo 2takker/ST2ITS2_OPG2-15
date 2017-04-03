@@ -17,7 +17,7 @@ namespace DTO
         {
             sys_ = sys;
             dia_ = dia;
-            dt_ = DateTime.Now; ;
+            dt_ = DateTime.Now;
         }
 
         public BT_DTO(int sys, int dia, int puls)
