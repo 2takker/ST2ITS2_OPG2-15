@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DTO;
 
 
-namespace Logic_tier_stub
+namespace Logic_tier.stub
 {
     // This is NOT a Logic tier.
     // It is at Logic stump (no connection to a Data tier) wich can be used ONLY to test the Presentation tier.

@@ -52,7 +52,7 @@
     <Compile Include="LogicLayer\ILogic.cs" />
     <Compile Include="LogicLayer\Logic.cs" />
     <Compile Include="LogicLayer\LogicStump.cs" />
-    <Compile Include="DTO\Login.cs" />
+    <Compile Include="PresentationLayer\Login.cs" />
     <Compile Include="PresentationLayer\dataGUI.cs">
       <SubType>Form</SubType>
     </Compile>
