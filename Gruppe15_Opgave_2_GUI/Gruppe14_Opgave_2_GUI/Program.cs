@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Data;
+using Logic_tier;
 
 namespace Gruppe15_Opgave_2_GUI
 {
@@ -16,7 +18,11 @@ namespace Gruppe15_Opgave_2_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dataGUI());            
+
+            var dataObject = new DataBase();
+            var logicObject = new Logic(dataObject);
+
+            Application.Run(new dataGUI(logicObject));            
         }
 
         

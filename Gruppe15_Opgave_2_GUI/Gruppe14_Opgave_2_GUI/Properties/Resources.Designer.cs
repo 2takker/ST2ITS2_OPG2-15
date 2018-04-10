@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Gruppe14_Opgave_2_GUI.Properties
+namespace Gruppe15_Opgave_2_GUI.Properties
 {
 
 
